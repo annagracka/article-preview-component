@@ -2,9 +2,13 @@
 h1 {
   color: #48556a;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
 }
 
 p {
   color: #6d7f97;
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
 }
