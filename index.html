@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./src/scss/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
@@ -11,24 +11,30 @@
 </head>
 <body>
   <main class="box">
-    <section class="box__img">
-      <img src="./images/drawers.jpg" alt="furniture photo">
+    <section class="box__photo">
+      <img class="photo" src="./images/drawers.jpg" alt="furniture photo">
     </section>
     <section class="box__text">
       <div class="box__title">
+        <h1>
         Shift the overall look and feel by adding these wonderful 
         touches to furniture in your home
+        </h1>
       </div>
       <div class="box__description">
+        <p>
         Ever been in a room and felt like something was missing? Perhaps 
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
+        </p>
       </div>
       <div class="box__author">
-        <img src="./images/avatar-michelle.jpg" alt="avatar">
-        <h3>Michelle Appleton</h3>
-        <h3> 28 Jun 2020</h3>
-        <a href="#">Share</a>
+        <img class="box__author--photo" src="./images/avatar-michelle.jpg" alt="avatar">
+        <div class="box__author--info">
+          <p class="author__info--name">Michelle Appleton</p>
+          <p class="author__info--date"> 28 Jun 2020</p>
+          <a class="box__share-button" href="#">Share</a>
+        </div>
       </div>
     </section>
   </main>

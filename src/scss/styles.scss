@@ -1,0 +1,64 @@
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    width: 720px;
+    height: 280px;
+
+    &__photo {
+        width: 280px;
+        height: auto;
+    }
+
+    &__text {
+
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+
+    &__author {
+
+
+        &--photo {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &--name {
+
+        }
+
+        &--date {
+
+        }
+    }
+
+    &__share-button {
+        
+    }
+}
+
+.photo {
+    width: inherit;
+    height: auto;
+}
