@@ -18,14 +18,25 @@ body {
     transform: translate(50%, -50%);
     display: flex;
     width: 720px;
-    height: 280px;
+    height: auto;
     background-color: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
 
+    @include tablet {
+        flex-wrap: wrap;
+        height: auto;
+        max-width: 330px;
+    }
+
     &__photo {
         width: 285px;
         height: 280px;
+
+        @include tablet {
+            max-height: 400px;
+            width: 100%;
+        }
     }
 
     &__text {
@@ -39,10 +50,6 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-    }
-
-    &__share-button {
-
     }
 }
 
@@ -68,8 +75,6 @@ body {
         }
     }
 }
-
-
 
 .photo {
     width: inherit;

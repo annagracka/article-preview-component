@@ -5,12 +5,23 @@ h1 {
   letter-spacing: 0.5px;
   line-height: 1.25;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+}
 
 p {
   color: #6d7f97;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.25px;
+}
+@media screen and (max-width: 768px) {
+  p {
+    letter-spacing: 0.1px;
+  }
 }
 
 body {
@@ -29,14 +40,27 @@ body {
   transform: translate(50%, -50%);
   display: flex;
   width: 720px;
-  height: 280px;
+  height: auto;
   background-color: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .box {
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 330px;
+  }
+}
 .box__photo {
   width: 285px;
   height: 280px;
+}
+@media screen and (max-width: 768px) {
+  .box__photo {
+    max-height: 400px;
+    width: 100%;
+  }
 }
 .box__text {
   padding: 20px 35px 35px 35px;
@@ -48,6 +72,7 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
 .author {
   display: flex;
   align-items: center;
