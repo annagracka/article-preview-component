@@ -52,8 +52,8 @@ button {
 @media screen and (max-width: 768px) {
   .box {
     flex-wrap: wrap;
-    height: auto;
-    max-width: 330px;
+    height: 490px;
+    width: 330px;
   }
 }
 .box__photo {
@@ -62,7 +62,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .box__photo {
-    max-height: 400px;
+    height: 200px;
     width: 100%;
   }
 }
@@ -75,6 +75,11 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .box__author {
+    padding-top: 15px;
+  }
 }
 
 .author {
@@ -113,11 +118,14 @@ button {
   border-radius: 50%;
   padding: 7.5px;
 }
+.share-button svg {
+  color: #6d7f97;
+}
 .share-button__modal {
-  background-color: #FFFFFF;
+  background-color: #6d7f97;
   border-radius: 50%;
   padding: 7.5px;
-  margin-left: 67.5px;
+  margin-left: 50px;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -125,8 +133,8 @@ button {
     display: inline;
   }
 }
-.share-button__modal--tablet {
-  fill: #ecf2f8;
+.share-button__modal svg {
+  color: #FFFFFF;
 }
 
 .modal {
@@ -150,13 +158,15 @@ button {
 @media screen and (max-width: 768px) {
   .modal {
     width: 330px;
-    bottom: 0;
+    height: 65px;
+    bottom: 6.5%;
     right: 50%;
     border-radius: 0 0 10px 10px;
   }
 }
 .modal__share {
   color: #6d7f97;
+  letter-spacing: 4px;
 }
 .modal__triangle {
   position: absolute;

@@ -29,8 +29,8 @@ button {
 
     @include tablet {
         flex-wrap: wrap;
-        height: auto;
-        max-width: 330px;
+        height: 490px;
+        width: 330px;
     }
 
     &__photo {
@@ -38,14 +38,13 @@ button {
         height: 280px;
 
         @include tablet {
-            max-height: 400px;
+            height: 200px;
             width: 100%;
         }
     }
 
     &__text {
         padding: 20px 35px 35px 35px;
-
     }
 
     &__author {
@@ -54,6 +53,10 @@ button {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
+        @include tablet {
+            padding-top: 15px;
+        }
     }
 }
 
@@ -97,12 +100,15 @@ button {
     border-radius: 50%;
     padding: 7.5px;
 
+    & svg {
+        color: $desaturated-dark-blue;
+    }
+
     &__modal {
-        // background-color: $desaturated-dark-blue;
-        background-color: #FFFFFF;
+        background-color: $desaturated-dark-blue;
         border-radius: 50%;
         padding: 7.5px;
-        margin-left: 67.5px;
+        margin-left: 50px;
 
         display: none;
 
@@ -110,8 +116,8 @@ button {
             display: inline;
         }
 
-        &--tablet {
-            fill: $light-grayish-blue;
+        & svg {
+            color: #FFFFFF;
         }
     }
 }
@@ -136,14 +142,15 @@ button {
 
     @include tablet {
         width: 330px;
-        bottom: 0;
+        height: 65px;
+        bottom: 6.5%;
         right: 50%;
         border-radius: 0 0 10px 10px;
     }
 
     &__share {
         color: $desaturated-dark-blue;
-        
+        letter-spacing: 4px;
     }
 
     &__triangle {
