@@ -11,6 +11,11 @@ body {
     background-color: $light-grayish-blue;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 .box {
     position: absolute;
     top: 50%;
@@ -91,6 +96,24 @@ body {
     background-color: $light-grayish-blue;
     border-radius: 50%;
     padding: 7.5px;
+
+    &__modal {
+        // background-color: $desaturated-dark-blue;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        padding: 7.5px;
+        margin-left: 67.5px;
+
+        display: none;
+
+        @include tablet {
+            display: inline;
+        }
+
+        &--tablet {
+            fill: $light-grayish-blue;
+        }
+    }
 }
 
 .modal {
@@ -120,6 +143,7 @@ body {
 
     &__share {
         color: $desaturated-dark-blue;
+        
     }
 
     &__triangle {
