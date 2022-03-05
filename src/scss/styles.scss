@@ -123,7 +123,6 @@ button {
 }
 
 .modal {
-    display: none;
     position: absolute;
     bottom: 45%;
     right: 7%;
@@ -139,6 +138,7 @@ button {
     -webkit-box-shadow: 0px 7px 20px -7px $very-dark-grayish-blue; 
     box-shadow: 0px 7px 20px -7px $very-dark-grayish-blue;
     z-index: 5;
+    display: none;
 
     @include tablet {
         width: 330px;
@@ -168,4 +168,8 @@ button {
             display: none;
         }
     }
+}
+
+.visible {
+    display: flex;
 }
