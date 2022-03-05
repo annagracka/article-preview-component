@@ -75,10 +75,10 @@ button {
     &__info {
         & p {
             line-height: 5px;
-        }
-// nie dziala
-        &:first-child {
-            color: $very-dark-grayish-blue;
+            
+            &:first-child {
+                color: $very-dark-grayish-blue;
+            }
         }
     }
 }

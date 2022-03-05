@@ -96,7 +96,7 @@ button {
 .author__info p {
   line-height: 5px;
 }
-.author__info:first-child {
+.author__info p:first-child {
   color: #48556a;
 }
 
